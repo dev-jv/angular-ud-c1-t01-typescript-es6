@@ -1,5 +1,6 @@
+"use strict";
 function saludar(nombre) {
-    console.table('Hola ' + nombre); // Hola Logan
+    console.table('Holafffdd ' + nombre); // Hola Logan
 }
 var wolverine = {
     nombre: 'Logan'
