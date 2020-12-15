@@ -1,8 +1,8 @@
 "use strict";
-function saludar(nombre) {
-    console.table('Holafffdd ' + nombre); // Hola Logan
-}
-var wolverine = {
-    nombre: 'Logan'
-};
-saludar(wolverine.nombre);
+(function () {
+    var mensaje = 'Hola';
+    // if(true){
+    //     let mensaje = 'M';
+    // }
+    console.log(mensaje);
+})();
