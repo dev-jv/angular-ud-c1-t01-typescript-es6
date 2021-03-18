@@ -1,13 +1,10 @@
 (function () {
-     function activar( quien : string, momento? : string, objeto : string = 'señal'){
-         if(momento){
-             console.log(`${ quien } activó la ${ objeto } en aquella ${ momento } `)
+     function activate( who : string, moment? : string, object : string = 'signal'){
+         if(moment){
+             console.log(`${ who } actived the ${ object } in that moment ${ moment } `)
          } else {
-             console.log(`${ quien } activó la ${ objeto }`)
+             console.log(`${ who } actived the ${ object }`)
          }
      }
-     activar('Gordon','noche');
+     activate('Gordon','night');
 })();
-
-
-

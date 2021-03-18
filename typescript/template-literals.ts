@@ -1,19 +1,15 @@
 (function () {
-    function getEdad() {
+    function getAge() {
         return 10 + 20 + 4
     }
-    const nombre = 'Nick';
-    const apellido = 'Burkhardt';
-    const edad = 33;
+    const name = 'Nick';
+    const lastName = 'Burkhardt';
+    const age = 33;
 
-    // const salida = nombre + apellido + edad;
-    // const salida = nombre + " " + apellido + "(" + edad + ")";
-    // const salida = `${ nombre } ${ apellido } (${edad})`;
-    const salida = `${ nombre }\n${ apellido }\n(${getEdad()})`;
+    // const out = name + lastName + age;
+    // const out = name + " " + lastName + "(" + age + ")";
+    // const out = `${ name } ${ lastName } (${age})`;
+    const out = `${ name }\n${ lastName }\n(${getAge()})`;
 
-    console.log(salida);
-
+    console.log(out);
 })();
-
-
-

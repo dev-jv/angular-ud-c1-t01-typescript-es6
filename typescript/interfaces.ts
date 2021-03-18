@@ -1,27 +1,24 @@
 (() => {
 
     interface Observers {
-        nombre: string;
-        edad: number;
-        poder?: string;
+        name: string;
+        age: number;
+        power?: string;
     }
 
-    const enviarMisionTwelve = (obserber: Observers) => {
-        console.log(`Enviando a ${ obserber.nombre } a la misión Twelve`);
+    const sendMissionTwelve = (obserber: Observers) => {
+        console.log(`Sending ${ obserber.name } to the mission Twelve`);
     };
 
-    const regresarAlFuturo = (observer: Observers) => {
-        console.log(`Regresando a ${ observer.nombre } al futuro`)
+    const returnrToFuture = (observer: Observers) => {
+        console.log(`Returning a ${ observer.name } to the future`)
     };
 
     const september: Observers = {
-        nombre: 'September',
-        edad: 30
+        name: 'September',
+        age: 30
     };
 
-    enviarMisionTwelve( september );
-    regresarAlFuturo( september );
+    sendMissionTwelve( september );
+    returnrToFuture( september );
 })();
-
-
-

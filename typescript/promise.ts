@@ -2,8 +2,8 @@
     console.log('Inicio');
     const prom1 = new Promise( (resolve, reject ) => {
         setTimeout(()=>{
-            // resolve('Se terminó el timeout');
-            reject('Se terminó el timeout');
+            // resolve('timeout ended');
+            reject('timeout ended');
         },1000);
     });
 
@@ -11,8 +11,5 @@
         .then( message => console.log( message ) )
         .catch( e => { console.warn( e ) });
 
-    console.log('Fin')
+    console.log('End')
 })();
-
-
-

@@ -8,26 +8,23 @@
     console.log( funExp('normal') );
     console.log( funArrow( 'arrow' ) )
 
-    const sumNor = function( a:number, b:number ){
+    const addNor = function( a:number, b:number ){
         return a+b;
     };
 
-    const sumArr = (a:number, b:number) => a+b;
+    const addArr = (a:number, b:number) => a+b;
 
-    console.log(sumNor(5,20));
-    console.log(sumArr(2,58));
+    console.log(addNor(5,20));
+    console.log(addArr(2,58));
 
     const deshojo = {
         color: 'rojo',
         expresion(){
             setTimeout(()=>{
-                console.log(`El deshojo es ${this.color} en primavera!`) // this en un arrow function!!
+                console.log(`The deshojo is ${this.color} in spring!`) // this en un arrow function!!
             }, 100);
         }
     };
 
     deshojo.expresion();
 })();
-
-
-

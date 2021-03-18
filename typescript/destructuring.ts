@@ -28,6 +28,3 @@
 
     extraerArr( wesen );
 })();
-
-
-

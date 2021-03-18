@@ -1,21 +1,18 @@
 (() => {
-    const retirarDinero = (montoRetirar:number):Promise<number> => {
-        let dineroActual = 1000;
+    const removeMoney = (amountToGet:number):Promise<number> => {
+        let currentMoney = 1000;
         console.log('maybe');
         return new Promise((resolve, reject) => {
-            if(montoRetirar>dineroActual){
-                reject('No hay suficientes fondos');
+            if(amountToGet>currentMoney){
+                reject('Not enough funds');
             }else{
-                dineroActual -= montoRetirar;
-                resolve(dineroActual);
+                currentMoney -= amountToGet;
+                resolve(currentMoney);
             }
         })
     };
 
-    retirarDinero( 500 )
-        .then( montoActual => console.log(`Me queda ${ montoActual }`))
+    removeMoney( 500 )
+        .then( currentMoney => console.log(`I have ${ currentMoney }`))
         .catch( console.warn )
 })();
-
-
-
